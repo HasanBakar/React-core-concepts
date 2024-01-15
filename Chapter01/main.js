@@ -1,9 +1,14 @@
+const intro = () => {
+    return React.createElement('p', {}, "Hello, I am abu Bakar")
+}
+
 const App = () =>{
     {
         return React.createElement(
           "h1",
-          { style: { color: "red" } },
-          "Hello world"
+          { style: { color: "cyan" } },
+          "Hello world",
+          intro()
         );
     }
 }
