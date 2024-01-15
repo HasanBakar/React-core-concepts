@@ -1,19 +1,16 @@
-const intro = () => {
-    return React.createElement('p', {}, "Hello, I am abu Bakar")
+
+const  Hello = () =>{
+    return <div>Hello world</div>;
 }
 
-const App = () =>{
-    {
-        return React.createElement(
-          "h1",
-          { style: { color: "cyan" } },
-          "Hello world",
-          intro()
-        );
-    }
-}
+const App = () => {
+    return (
+      <React.Fragment>
+        <h1>This my fokira react application</h1>
+        <Hello />
+      </React.Fragment>
+    );
+};
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(React.createElement(App))
-
-
+root.render(<App />)
